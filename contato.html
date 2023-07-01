@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width">
+
+  <title>Contato</title>
+
+  <link href="test.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+
+
+
+<body>
+
+  <header class="conter-itens">
+
+    <nav class="menu">
+
+      <div>
+
+        <img class="logo" src="LogoPAPSP.png">
+
+        <h1 id="texto">Ponto a Ponto São Paulo</h1>
+
+        <hr>
+
+         <img class="prof" src="user.svg">
+
+         <img class="fav" src="favorito.svg">
+
+ 
+
+      </div>
+
+
+
+
+ 
+
+
+
+
+    </nav>
+
+
+
+
+ 
+
+
+
+
+    <nav class="art">
+
+
+
+
+ 
+
+
+
+
+            <ul>
+
+                    <li>
+
+                        <a href="https://graceco-1.juliohuncho.repl.co/">Home</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="casashow.htm">Casas de Shows</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="Esportes.htm">Esportes</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="Cultura.htm">Cultura</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="Bares.htm">Bares</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="https://www.tripadvisor.com.br/Restaurants-g150807-Cancun_Yucatan_Peninsula.html">Restaurantes</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="Contato.html">Baladas</a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="Sobre.html">Contato</a>
+
+                    </li>
+
+              <li>
+
+                        <a href="Sobre.html">Sobre</a>
+
+                    </li>
+
+                </ul>
+
+            </nav>
+
+           
+
+</header>
+
+   
+
+<script type="text/javascript">
+
+
+
+
+    function Enviar(){
+
+        let n = document.getElementById("Nome").value;
+
+        let e = document.getElementById("Email").value;
+
+        let m = document.getElementById("Mensagem").value;
+
+     
+
+
+
+
+
+     
+
+     
+
+     
+
+        if( n=="" && e=="" && m==""){
+
+           
+
+            alert('Campos vazios, Por favor revisar');
+
+            document.getElementById("Nome").focus
+
+            document.getElementById("Nome").style.borderColor = "red";  
+
+            document.getElementById("Email").focus;
+
+            document.getElementById("Email").style.borderColor = "red";    
+
+            document.getElementById("Mensagem").focus;
+
+            document.getElementById("Mensagem").style.borderColor = "red";  
+
+
+
+
+
+        }
+
+
+
+
+        else if(n!="" && e!="" && m!=""){
+
+        document.getElementById("Nome").value="";
+
+        document.getElementById("Email").value="";
+
+        document.getElementById("Mensagem").value="";
+
+        alert('Obrigado por entrar em contato, retornaremos em breve!')
+
+        }
+
+    }
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+    <h2>Entre em contato</h2>
+
+    <form class="cx">
+
+        <label for="Nome">Nome</label><br>
+
+        <input type="text" id="Nome" name="Nome"  required=""><br>
+
+
+
+
+        <label for="Email">Email</label><br>
+
+        <input type="email" id="Email" name="Email"  required=""><br>
+
+
+
+
+        <label for="Mensagem">Mensagem</label><br>
+
+        <textarea name="Mensagem" id="Mensagem" required=""></textarea><br>
+
+
+
+
+        <input type="button" id="btnEnviar" onclick="Enviar()" value="Enviar">
+
+    </form>
+
+
+
+
+    <footer>
+
+        <a href="https://wa.me/5511" target="_blank" rel="noopener noreferrer">
+
+        <img class="whats"src="whats.svg">
+
+        <p>Whatsapp</p>
+
+        </a>
+
+        <a href="" target="_blank" rel="noopener noreferrer">
+
+        <img  class ="email"src="emial.svg">
+
+        <p>E-mail</p>
+
+        </a>
+
+    </footer>
+
+
+
+
+</html>
